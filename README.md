@@ -6,30 +6,41 @@ This would be useful for anyone new to rest api concepts and will help to unders
 This is built php SLIM framework. Also, I have taken basic code from https://github.com/ccoenraets/wine-cellar-php
 
 #Installation of Rest API Server
-You can clone this git repository to your local, I will recommend to clone it under your www folder
+
+You can clone this git repository to your local, I will recommend to clone it under your www folder:-
+```
 git clone https://github.com/avnarun/example-php-rest-slim.git
+```
 
-cd to the working directory
+cd to the working directory:-
+```
 cd example-php-rest-slim
+```
 
-Install composer dependencies, includes slim framework
+Install composer dependencies, includes slim framework:-
+```
 composer install
+```
 
-All done
+Create database and create wine table using cellar.sql
+
+Finally update database.php to reflect your db information
+
+<b>All done and you should be ready to start making rest api calls !!!</b>
 
 #Usage (doing CRUD operation from a rest api client)
 You can use any rest api client you have and can do basic CRUD operations
 
-Database record RETRIEVAL (performed via HTTP GET)
-http://localhost/example-php-rest-slim/wines
-http://localhost/example-php-rest-slim/wines/1 (:id)
-http://localhost/example-php-rest-slim/wines/search/:query
+<h4>Database record RETRIEVAL (performed via HTTP GET)</h4>
+<a href="http://localhost/example-php-rest-slim/wines">http://localhost/example-php-rest-slim/wines</a>
+<br/><a href="http://localhost/example-php-rest-slim/wines/1">http://localhost/example-php-rest-slim/wines/1</a> (:id)
+<br/><a href="http://localhost/example-php-rest-slim/wines/search/CHATEAU">http://localhost/example-php-rest-slim/wines/search/CHATEAU</a> :query
 
-Database record CREATE (performed via HTTP POST)
-http://localhost/example-php-rest-slim/wines
+<h4>Database record CREATE (performed via HTTP POST)</h4>
+<a href="http://localhost/example-php-rest-slim/wines">http://localhost/example-php-rest-slim/wines</a>
 
-Database record UPDATE (performed via HTTP PUT)
-http://localhost/example-php-rest-slim/wines/1 (:id)
+<h4>Database record UPDATE (performed via HTTP PUT)</h4>
+<a href="http://localhost/example-php-rest-slim/wines/1">http://localhost/example-php-rest-slim/wines/1</a> (:id)
 
-Database record DELETE (performed via HTTP DELETE)
-http://localhost/example-php-rest-slim/wines/1 (:id)
+<h4>Database record DELETE (performed via HTTP DELETE)</h4>
+<a href="http://localhost/example-php-rest-slim/wines/1">http://localhost/example-php-rest-slim/wines/1</a> (:id)

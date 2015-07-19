@@ -1,0 +1,13 @@
+{
+    "name": "avnarun/php-rest-example",
+    "description": "This is a very simple rest example implementation using php.",
+    "require": {
+        "slim/slim": "^2.6"
+    },
+    "authors": [
+        {
+            "name": "avnarun",
+            "email": "arun@bizyantra.com"
+        }
+    ]
+}

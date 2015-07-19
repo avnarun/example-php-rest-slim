@@ -1,13 +1,13 @@
 {
-    "name": "avnarun/php-rest-example",
-    "description": "This is a very simple rest example implementation using php.",
+    "name": "avnarun/example-php-rest-slim",
+    "description": "This is a very simple rest example implementation using php and slim framework.",
     "require": {
         "slim/slim": "^2.6"
     },
     "authors": [
         {
             "name": "avnarun",
-            "email": "arun@bizyantra.com"
+            "email": "noemail@noemail.com"
         }
     ]
 }
